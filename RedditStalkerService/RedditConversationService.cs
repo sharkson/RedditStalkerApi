@@ -38,6 +38,7 @@ namespace RedditStalkerService
             }
             catch (RedditBadRequestException) { }
             catch (RedditNotFoundException) { }
+            catch (RedditUnauthorizedException) { }
 
             return conversations;
         }
